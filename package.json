@@ -1,0 +1,32 @@
+{
+  "name": "npm-data",
+  "version": "1.0.0",
+  "description": "Get information about NPM packages with ease.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethanent/npm-data.git"
+  },
+  "keywords": [
+    "npm",
+    "data",
+    "package",
+    "package-info",
+    "package-json"
+  ],
+  "author": "Ethan Davis",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Ethanent/npm-data/issues"
+  },
+  "homepage": "https://github.com/Ethanent/npm-data#readme",
+  "dependencies": {
+    "phin": "^2.2.90"
+  },
+  "devDependencies": {
+    "whew": "^1.1.2"
+  }
+}
