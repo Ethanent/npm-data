@@ -3,7 +3,13 @@
 
 [GitHub](https://github.com/ethanent/npm-data) | [NPM](https://www.npmjs.com/package/npm-data)
 
-# Basic usage
+## Install
+
+```bash
+npm i npm-data
+```
+
+## Basic usage
 
 ```js
 const packageData = require('npm-data')
