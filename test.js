@@ -3,7 +3,7 @@ const packageData = require('./')
 
 w.add('Get all metadata for phin package from registry', (respond) => {
 	packageData('phin').then((res) => {
-		if (typeof res === 'object') {
+		if (typeof res === 'object' && res.hasOwnProperty('name')) {
 			respond(true, 'Recieved response with some valid looking data.')
 		}
 		else {
@@ -16,7 +16,7 @@ w.add('Get all metadata for phin package from registry', (respond) => {
 
 w.add('Get phin package latest version metadata from registry', (respond) => {
 	packageData('phin', 'latest').then((res) => {
-		if (typeof res === 'object') {
+		if (typeof res === 'object' && res.hasOwnProperty('license')) {
 			respond(true, 'Recieved response with some valid looking data.')
 		}
 		else {

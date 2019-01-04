@@ -1,22 +1,36 @@
 # npm-data
-> Get information about NPM packages with ease.
+> Fetch NPM package metadata
 
----
-
-[Full Documentation](https://ethanent.github.io/npm-data/) | [GitHub](https://github.com/Ethanent/npm-data) | [NPM](https://www.npmjs.com/package/npm-data)
+[GitHub](https://github.com/ethanent/npm-data) | [NPM](https://www.npmjs.com/package/npm-data)
 
 # Basic usage
 
-```javascript
+```js
 const packageData = require('npm-data')
 
-packageData('phin', 'latest').then((res) => {
-	console.log(res.version); // 2.2.90 or something
-}).catch((err) => {
-	console.log('Error! ' + err)
-})
+// in async context...
+
+const phinLatestMetadata = await packageData('phin', 'latest')
+
+console.log(phinLatestMetadata.version)
 ```
 
-# Full documentation
+## Fetch all versions
 
-Find the full documentation [over here](https://ethanent.github.io/npm-data/)!
+```js
+const phinAllMetadata = await packageData('phin')
+
+console.log(phinAllMetadata.created)
+
+// "2014-05-21T03:41:11.311Z"
+```
+
+## Fetch specific version
+
+```js
+const phinAllMetadata = await packageData('phin', '3.2.4')
+
+console.log(phinAllMetadata.main)
+
+// "lib/phin.min.js"
+```

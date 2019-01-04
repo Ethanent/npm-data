@@ -1,14 +1,14 @@
 {
   "name": "npm-data",
-  "version": "1.0.1",
-  "description": "Get information about NPM packages with ease.",
+  "version": "2.0.0",
+  "description": "Fetch NPM package metadata",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ethanent/npm-data.git"
+    "url": "git+https://github.com/ethanent/npm-data.git"
   },
   "keywords": [
     "npm",
@@ -18,15 +18,18 @@
     "package-json"
   ],
   "author": "Ethan Davis",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ethanent/npm-data/issues"
+    "url": "https://github.com/ethanent/npm-data/issues"
   },
-  "homepage": "https://github.com/Ethanent/npm-data#readme",
+  "homepage": "https://github.com/ethanent/npm-data#readme",
   "dependencies": {
-    "phin": "^2.2.90"
+    "centra": "^2.2.2"
   },
   "devDependencies": {
     "whew": "^1.1.2"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
