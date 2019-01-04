@@ -12,10 +12,10 @@
   },
   "keywords": [
     "npm",
-    "data",
     "package",
     "package-info",
-    "package-json"
+    "package-json",
+    "data"
   ],
   "author": "Ethan Davis",
   "license": "MIT",
