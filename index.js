@@ -13,10 +13,10 @@ module.exports = async (packageName, version) => {
 
 	if (res.statusCode !== 200) {
 		if (res.statusCode === 404) {
-			reject(new Error('Package does not exist in NPM registry.'))
+			throw new Error('Package does not exist in NPM registry.')
 		}
 		else {
-			reject(new Error('Unexpected status code: ' + res.statusCode))
+			throw new Error('Unexpected status code: ' + res.statusCode)
 		}
 	}
 	else {
